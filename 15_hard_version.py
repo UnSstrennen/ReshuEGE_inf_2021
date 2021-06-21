@@ -25,7 +25,7 @@ for p in P:
         #              10000000        30              31          10000000
         for A in [range(p+1, q+1), range(p+1, q), range(p, q+1), range(p, q)]:
             if test(A):
-                if min_length > len(A):
-                    min_length = len(A)
+                if min_length > q-p:
+                    min_length = q-p
 
 print(min_length)
